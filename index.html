@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTG | DEV em Dobro</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/fonts.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="titulo" src="/src/images/title.png" alt="Magic The Gathering" height="150px">
+    </header>
+
+    <main class="slider">
+
+        <button class="btn-seta btn-voltar" id="btn-voltar">
+            <img src="src/images/seta.png" alt="Seta de voltar">
+        </button>
+
+        <ul class="lista-personagens">
+            <li class="cartao fundo-1 selecionado">
+                <div class="carta-virada"></div>
+
+                <h2 class="nome">Elas il-Kor, Peregrina Sádica</h2>
+
+                <div class="mana-carta">
+                    <span class="white-mana"></span>
+                    <span class="black-mana"></span>
+                </div>
+
+                <img src="src/images/elas-il-kor.jpg" alt="Cosmos Sentinel, o Guardião Galáctico"
+                    class="imagem-carta" />
+
+                <div class="informacoes">
+                    <p class="descricao">
+                        <strong>Criatura Lendária - Phyrexiano Kor Clérigo</strong> <br>
+                        Toque mortífero <br>
+                        Toda vez que outra criatura entra no campo de batalha sob seu controle, você ganha 1 ponto de
+                        vida. <br>
+                        Toda vez que outra criatura que você controla morre, cada oponente perde 1 ponto de vida.
+                    </p>
+                    <div class="informacoes-ataque">
+                        <span>ATK: 2 /</span>
+                        <span>DEF: 2</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cartao fundo-2">
+                <div class="carta-virada"></div>
+                <h2 class="nome">Liliana, a Necromante</h2>
+                <div class="mana-carta">
+                    <span class="number-three-mana"></span>
+                    <span class="black-mana"></span>
+                    <span class="black-mana"></span>
+                </div>
+                <img src="src/images/liliana.png" alt="Liliana, a Necromante" class="imagem-carta" />
+                <div class="informacoes">
+                    <p class="descricao">
+                        <strong>Planeswalker Lendário - Liliana</strong> <br>
+                        <strong>+ 1</strong>: O jogador alvo perde 2 pontos de vida. <br>
+                        <strong>- 1</strong>: Devolva o card de criatura alvo de seu cemitério para a sua mão. <br>
+                        <strong>- 7</strong>: Destrua até duas criaturas alvo. Coloque até dois cards de criatura de
+                        qualquer cemitério no campo de batalha sob o seu controle. <br>
+                    </p>
+                    <div class="informacoes-ataque">
+                        <span>HP: 4</span>
+                    </div>
+                </div>
+            </li>
+            <li class="cartao fundo-3">
+                <div class="carta-virada"></div>
+                <h2 class="nome">Skizzik</h2>
+                <div class="mana-carta">
+                    <span class="number-three-mana"></span>
+                    <span class="red-mana"></span>
+                </div>
+                <img src="src/images/skizzik.png" alt="Skizzik" class="imagem-carta" />
+                <div class="informacoes">
+                    <p class="descricao">
+                        <strong>Criatura - Elemental</strong> <br>
+                        Reforçar <span class="red-mana-icon"></span> (Você pode pagar um custo adicional de <span
+                            class="red-mana-icon"></span> ao conjurar esta mágica.) <br>
+                        Atropelar, ímpeto <br>
+                        No início da etapa final, se Skizzik não tiver sido reforçado, sacrifique-o.
+                    </p>
+                    <div class="informacoes-ataque">
+                        <span>ATK: 5 /</span>
+                        <span>DEF: 3</span>
+                    </div>
+                </div>
+            </li>
+            <li class="cartao fundo-4">
+                <div class="carta-virada"></div>
+                <h2 class="nome">Esquivadora da Rua do Estanho</h2>
+                <div class="mana-carta">
+                    <span class="red-mana"></span>
+                </div>
+                <img src="src/images/tin-street.png" alt="Esquivadora da Rua de Estanho" class="imagem-carta" />
+                <div class="informacoes">
+                    <p class="descricao">
+                        <strong>Criatura - Goblin Ladino</strong> <br>
+                        Ímpeto <br>
+                        <span class="red-mana-icon"></span>: Esquivadora da Rua de Estanho não pode ser bloqueada neste
+                        turno, exceto por criaturas com defensor.
+                    </p>
+                    <div class="informacoes-ataque">
+                        <span>ATK: 1 /</span>
+                        <span>DEF: 1</span>
+                    </div>
+                </div>
+            </li>
+            <li class="cartao fundo-5">
+                <div class="carta-virada"></div>
+                <h2 class="nome">Tori D'Avenant, Ginete da Fúria</h2>
+                <div class="mana-carta">
+                    <span class="number-one-mana"></span>
+                    <span class="red-mana"></span>
+                    <span class="red-mana"></span>
+                    <span class="white-mana"></span>
+                </div>
+                <img src="src/images/tori-d'avenant.png" alt="Tori D'Avenant, Ginete da Fúria" class="imagem-carta" />
+                <div class="informacoes">
+                    <p class="descricao">
+                        <strong>Criatura Lendária - Humano Cavaleiro</strong> <br>
+                        Vigilância, atropelar <br>
+                        Toda vez que Tori D'Avenant, Ginete da Fúria, ataca, todas as outras criaturas atacantes que
+                        você controla recebem +1/+1 até o final do turno. As outras criaturas atacantees vermelhas que
+                        você controla ganham atropelar até o final do turno. Desvire cada outra criatura atacante branca
+                        que você controla.
+                    </p>
+                    <div class="informacoes-ataque">
+                        <span>ATK: 3 /</span>
+                        <span>DEF: 3</span>
+                    </div>
+                </div>
+            </li>
+            <li class="cartao fundo-6">
+                <div class="carta-virada"></div>
+                <h2 class="nome">Teferi, Herói de Dominária</h2>
+                <div class="mana-carta">
+                    <span class="number-three-mana"></span>
+                    <span class="white-mana"></span>
+                    <span class="blue-mana"></span>
+                </div>
+                <img src="src/images/teferi.png" alt="Teferi, Herói de Dominária" class="imagem-carta" />
+                <div class="informacoes">
+                    <p class="descricao">
+                        <strong>Planeswalker Lendário - Teferi</strong> <br>
+                        <strong>+ 1</strong>: Compre um card. No início da próxima etapa final, desvire dois terrenos.
+                        <br>
+                        <strong>- 3</strong>: Coloque a permanente alvo que não seja um terreno no grimório do seu dono
+                        na terceira posição do topo. <br>
+                        <strong>- 8</strong>: Você recebe um emblema com "Toda vez que você comprar um card, exile a
+                        permanente alvo que um oponente controla.".
+                    </p>
+                    <div class="informacoes-ataque">
+                        <span>HP: 4</span>
+                    </div>
+                </div>
+            </li>
+            <li class="cartao fundo-7">
+                <div class="carta-virada"></div>
+                <h2 class="nome">Tibalt, Instigador Dissoluto</h2>
+                <div class="nivel-carta">
+                    <span class="number-two-mana"></span>
+                    <span class="red-mana"></span>
+                </div>
+                <img src="src/images/tibalt.png" alt="Tibalt, Instigador Dissoluto" class="imagem-carta" />
+                <div class="informacoes">
+                    <p class="descricao">
+                        <strong>Planeswalker Lendário - Tibalt</strong> <br>
+                        Seus oponentes não podem ganhar pontos de vida. <br>
+                        <strong>- 2</strong>: Crie uma ficha de criatura vermelha 1/1 do tipo Diabo com "Quando esta
+                        criatura morre, ela causa 1 ponto de dano a qualquer alvo."
+                    </p>
+                    <div class="informacoes-ataque">
+                        <span>HP: 5</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <button class="btn-seta btn-avancar" id="btn-avancar">
+            <img src="src/images/seta.png" alt="Seta de avançar">
+        </button>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>

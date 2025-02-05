@@ -1,0 +1,216 @@
+body {
+    font-family: 'Oswald', 'Planewalker' Arial, Helvetica, sans-serif;
+    background-image: url(../images/fundo-site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.red-mana-icon {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url(../images/red-terrain.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+
+.cartao {
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    padding: 12px;
+    gap: 5px;
+    position: absolute;
+}
+
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+.lista-personagens {
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+
+.cartao .nome {
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    font-size: 13px;
+    padding: 5px;
+    text-transform: uppercase;
+    border: solid 2px #a67c52;
+    border-radius: 4px;
+}
+
+.cartao .white-mana,
+.cartao .red-mana,
+.cartao .blue-mana,
+.cartao .number-three-mana,
+.cartao .number-two-mana,
+.cartao .number-one-mana,
+.cartao .black-mana {
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.cartao .white-mana {
+    background-image: url(../images/white-terrain.png);
+}
+
+.cartao .red-mana {
+    background-image: url(../images/red-terrain.png);
+}
+
+.cartao .blue-mana {
+    background-image: url(../images/blue-terrain.png);
+}
+
+.cartao .number-three-mana {
+    background-image: url(../images/number-3.png);
+}
+
+.cartao .number-two-mana {
+    background-image: url(../images/number-2.png);
+}
+
+.cartao .number-one-mana {
+    background-image: url(../images/number-1.png);
+}
+
+.cartao .black-mana {
+    background-image: url(../images/black-terrain.png);
+}
+
+.mana-carta {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 10px;
+    gap: 2px;
+}
+
+.cartao .imagem-carta {
+    max-width: 260px;
+    border-radius: 7px;
+    align-self: center;
+}
+
+.cartao .informacoes {
+    border-radius: 5px;
+    max-width: 300px;
+    color: black;
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    border: solid 2px #a67c52;
+    text-align: left;
+    line-height: 1.5;
+    padding: 5px;
+}
+
+.cartao .informacoes .descricao {
+    border-bottom: solid 1px black;
+    padding: 10px;
+    max-height: 95px;
+    overflow-y: scroll;
+    font-size: 13px;
+}
+
+.cartao .informacoes .informacoes-ataque {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 10px;
+}
+
+.cartao .informacoes .informacoes-ataque span {
+    font-size: 13px;
+}
+
+.fundo-1 {
+    background: url(../images/fundo-1.jpg);
+}
+
+.fundo-2 {
+    background: url(../images/fundo-2.jpg);
+}
+
+.fundo-3 {
+    background: url(../images/fundo-3.jpg);
+}
+
+.fundo-4 {
+    background: url(../images/fundo-4.jpg);
+}
+
+.fundo-5 {
+    background: url(../images/fundo-5.jpg);
+}
+
+.fundo-6 {
+    background: url(../images/fundo-6.jpg);
+}
+
+.fundo-7 {
+    background: url(../images/fundo-7.jpg);
+}
+
+.btn-seta {
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover {
+    background-color: rgb(200, 55, 27);
+}
+
+body ::-webkit-scrollbar-track {
+    background-color: #c4a57a;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c08057;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c08057;
+}
