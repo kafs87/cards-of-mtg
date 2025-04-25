@@ -4,12 +4,21 @@
         padding: 0 15px;
     }
 
+    .tituloPrincipal {
+        font-size: 45px;
+    }
+
     .slider {
         gap: 10px;
     }
 }
 
 @media(max-width: 496px) {
+
+    .tituloPrincipal {
+        font-size: 40px;
+    }
+
     .lista-personagens {
         width: 250px;
     }
@@ -40,14 +49,15 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 395px) {
     body {
         justify-content: start;
         padding-top: 10px;
         gap: 10px;
     }
 
-    .titulo {
-        height: 100px;
+    .tituloPrincipal {
+        margin-top: 80px;
+        font-size: 35px;
     }
 }
